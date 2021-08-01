@@ -16,6 +16,10 @@
     <!-- The launcher theme. It sets the main window background to the launch_screen drawable -->
 
     <!--styles for app-->
+    <style name="RoundedImageViewShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
     <!--df dialog-->
 
     <style name="viewParent">

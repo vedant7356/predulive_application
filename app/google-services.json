@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "151381924754",
+    "project_id": "preduliveedutechfoundati-f6edd",
+    "storage_bucket": "preduliveedutechfoundati-f6edd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151381924754:android:41f7bd6ebd34a1341ebf4b",
+        "android_client_info": {
+          "package_name": "com.dr.predulive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151381924754-ehrmck89gpjqn43kophqc8msn9kesvpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dr.predulive",
+            "certificate_hash": "c5dd63064b3d6bb45c26935d0744ebdf182ca23f"
+          }
+        },
+        {
+          "client_id": "151381924754-1r418088je2b9e0k5f347nu9gfus3kgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfchZ-pJUhzMeH6kOq3nyytOwKTS-armM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151381924754-1r418088je2b9e0k5f347nu9gfus3kgl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

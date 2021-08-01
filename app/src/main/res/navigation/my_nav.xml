@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dr.predulive.dashboard.bottomNavigationViewFragments.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/opportunityFragment"
+        android:name="com.dr.predulive.dashboard.bottomNavigationViewFragments.opportunityFragment"
+        android:label="fragment_opportunity"
+        tools:layout="@layout/fragment_opportunity" />
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.dr.predulive.dashboard.bottomNavigationViewFragments.uploadFragment"
+        android:label="fragment_upload"
+        tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.dr.predulive.dashboard.bottomNavigationViewFragments.coursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" />
+</navigation>

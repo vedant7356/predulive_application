@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dr.predulive">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +16,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Predulive">
-        <activity android:name=".dashboard.MainDashboardActivity"></activity>
+        <activity android:name=".dashboard.dashboardButtons.employSection.UpcomingEventsActivity"></activity>
+        <activity android:name=".dashboard.dashboardButtons.employSection.Employ_Employer_List_Activity" />
+        <activity android:name=".dashboard.dashboardButtons.employSection.EmployActivity" />
+        <activity android:name=".dashboard.uploadedCourses.Create_new_courses" />
+        <activity android:name=".dashboard.uploadedCourses.View_Pdf" />
+        <activity android:name=".dashboard.uploadedCourses.Description" />
+        <activity android:name=".dashboard.uploadedCourses.UploadedCoursesActivity" />
+        <activity android:name=".dashboard.dashboardButtons.UploadShortVideoActivity" />
+        <activity android:name=".dashboard.dashboardButtons.inspireSection.InspireActivity" />
+        <activity android:name=".navigationView.Student.StudentUploadedResumeActivity" />
+        <activity android:name=".navigationView.common.ChangePasswordActivity" />
+        <activity android:name=".navigationView.common.EditProfileActivity" />
+        <activity android:name=".dashboard.DashboardActivity" />
         <activity android:name=".authentication.SignUpActivity" />
         <activity android:name=".authentication.LoginActivity" />
         <activity android:name=".MainActivity">

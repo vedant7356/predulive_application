@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.uploadedCourses.Description">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="Course Title Here"
+                android:textAlignment="center"
+                android:textSize="45dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/course_title">
+            </TextView>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <VideoView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:id="@+id/video_id_view">
+
+
+
+
+                </VideoView>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="0" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:text="Created By"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:id="@+id/creator">
+            </TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="Description Here"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:id="@+id/desciption">
+            </TextView>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:text="Click Below to View the PDF"
+                android:textAlignment="center"
+                android:layout_marginTop="35dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:id="@+id/headng_for_pdf">
+            </TextView>
+
+            <Button
+                android:id="@+id/view_pdf_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="View the PDF"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

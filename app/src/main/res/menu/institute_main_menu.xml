@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Edit Profile" />
+
+
+    <item android:title="Institute Dashboard ">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/InstituteDashboardUploadedInstituteDetails"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Uploaded Institute Details" />
+
+                <item
+                    android:id="@+id/InstituteDashboardUploadCourses"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Upload Courses" />
+
+                <item
+                    android:id="@+id/promotionalTools"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Promotional Tools" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Settings">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/signOut"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Sign out" />
+
+                <item
+                    android:id="@+id/changePasswords"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Change Password" />
+
+                <item
+                    android:id="@+id/contactUs"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Contact us" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/Support"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Support" />
+
+
+</menu>
+

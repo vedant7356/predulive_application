@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Edit Profile" />
+
+
+
+    <item android:title="student">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/studentuploadedResume"
+                    android:icon="@drawable/ic_baseline_edit_24"
+                    android:title="Upload Resume" />
+
+                <item
+                    android:id="@+id/studentUploaded_Short_Videos"
+                    android:icon="@drawable/ic_baseline_cloud_upload_24"
+                    android:title="Upload Short Videos" />
+
+                <item
+                    android:id="@+id/studentuploadedCourses"
+                    android:icon="@drawable/courses_icon"
+                    android:title="uploaded Courses" />
+
+                <item
+                    android:id="@+id/studentStudyMaterial"
+                    android:icon="@drawable/courses_icon"
+                    android:title="Study Material" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/signOut"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Sign out" />
+
+                <item
+                    android:id="@+id/changePasswords"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Change Password" />
+
+                <item
+                    android:id="@+id/contactUs"
+                    android:icon="@drawable/ic_baseline_support_agent_24"
+                    android:title="Contact us" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/Support"
+        android:icon="@drawable/ic_baseline_support_agent_24"
+        android:title="Support" />
+
+
+</menu>
+
