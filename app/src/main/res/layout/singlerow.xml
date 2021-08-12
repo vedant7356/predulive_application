@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/nametext"
             android:text="This is Demo Name"
+            android:fontFamily="@font/alegreya_sc_black"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="#000"

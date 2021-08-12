@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="5dp"
     android:elevation="5dp"
+    android:background="@drawable/bgm"
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
@@ -20,6 +21,7 @@
             android:layout_marginLeft="10dp"
             android:text="Title"
             android:textColor="#000"
+            android:fontFamily="@font/alegreya_sc_black"
             android:textSize="25sp"
             android:textStyle="bold" />
 

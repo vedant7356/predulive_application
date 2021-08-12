@@ -31,6 +31,7 @@
         <activity android:name=".dashboard.DashboardActivity" />
         <activity android:name=".authentication.SignUpActivity" />
         <activity android:name=".authentication.LoginActivity" />
+        <activity android:name=".Intro_Activity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

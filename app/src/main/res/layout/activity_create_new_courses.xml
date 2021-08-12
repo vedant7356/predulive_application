@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgm"
     tools:context=".dashboard.uploadedCourses.Create_new_courses">
 
     <ScrollView
@@ -42,6 +43,7 @@
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="Enter Description"
+                android:textColorHint="@color/black"
                 android:inputType="textMultiLine"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,9 +53,11 @@
 
             <Button
                 android:id="@+id/browse"
+                style="@style/app_Button"
                 android:layout_width="265dp"
                 android:layout_height="63dp"
                 android:text="Browse Video"
+                android:fontFamily="@font/alegreya_sc_black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,10 +67,12 @@
 
             <Button
                 android:id="@+id/upload"
+                style="@style/app_Button"
                 android:layout_width="355dp"
                 android:layout_height="70dp"
                 android:layout_marginBottom="28dp"
                 android:text="Upload Video and Data"
+                android:fontFamily="@font/alegreya_sc_black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -77,9 +83,11 @@
             <Button
                 android:id="@+id/upload_pdf"
                 android:layout_width="355dp"
+                style="@style/app_Button"
                 android:layout_height="70dp"
                 android:layout_marginBottom="4dp"
                 android:text="Upload PDF Here"
+                android:fontFamily="@font/alegreya_sc_black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +99,7 @@
                 android:layout_width="337dp"
                 android:layout_height="47dp"
                 android:ems="10"
+                android:textColorHint="@color/black"
                 android:gravity="start|top"
                 android:hint="Enter Title Here"
                 android:inputType="textMultiLine"
@@ -106,6 +115,7 @@
                 android:layout_width="334dp"
                 android:layout_height="57dp"
                 android:ems="10"
+                android:textColorHint="@color/black"
                 android:gravity="start|top"
                 android:hint="Enter Your Username"
                 android:inputType="textMultiLine"

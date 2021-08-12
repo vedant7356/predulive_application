@@ -59,4 +59,11 @@
         <item name="android:paddingLeft">5dp</item>
     </style>
 
+    <style name="app_Button" parent="viewParent">
+        <item name="android:background">@drawable/emp_but</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.bumptech.glide.Glide
 import com.dr.predulive.R
 import de.hdodenhof.circleimageview.CircleImageView
@@ -42,6 +43,7 @@ class myadapter(var context: Context, var list: MutableList<model>): RecyclerVie
             intent.putExtra("pdf_url", mo.getPdf_url())
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             context.startActivity(intent)
+            Animatoo.animateSplit(context)
         }
     }
 

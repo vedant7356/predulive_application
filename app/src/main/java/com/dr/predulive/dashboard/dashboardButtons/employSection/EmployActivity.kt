@@ -5,8 +5,11 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 import com.dr.predulive.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -26,11 +29,14 @@ class EmployActivity : AppCompatActivity() {
     var userid: String? = null
     var firestore: FirebaseFirestore? = null
     var fAuth: FirebaseAuth? = null
+    var blink_the_img:android.widget.ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_employ)
+        blink_the_img=findViewById<View>(R.id.blink_image) as ImageView
 
+        YoYo.with(Techniques.Flash).duration(5000).repeat(15).playOn(blink_the_img)
         fAuth = FirebaseAuth.getInstance()
         storageReference = FirebaseStorage.getInstance().reference
         firestore = FirebaseFirestore.getInstance()

@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.dr.predulive.R
@@ -93,6 +94,7 @@ class EditProfileActivity : AppCompatActivity() {
         userDao.updateUser(user)
         Toast.makeText(this, "Successfully updated", Toast.LENGTH_SHORT).show()
         finish()
+        Animatoo.animateSwipeRight(this)
     }
 
     fun chooseImage(view: View?) {
@@ -182,10 +184,12 @@ class EditProfileActivity : AppCompatActivity() {
 
     fun profileBackButton(view: View) {
         finish()
+        Animatoo.animateSwipeRight(this)
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
         finish()
+        Animatoo.animateSwipeRight(this)
     }
 }

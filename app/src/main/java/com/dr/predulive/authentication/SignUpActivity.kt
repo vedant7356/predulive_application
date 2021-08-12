@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.dr.predulive.R
 import com.dr.predulive.daos.UserDao
 import com.dr.predulive.dashboard.DashboardActivity
@@ -57,6 +58,8 @@ class SignUpActivity : AppCompatActivity() {
     fun onLoginClick(view: View) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSwipeRight(this)
+
     }
     fun registerUserButton(view: View) {
         if (TextUtils.isEmpty(signUpNameEditTextView.text.trim())) {
@@ -117,5 +120,6 @@ class SignUpActivity : AppCompatActivity() {
 
         var intent = Intent(this, DashboardActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSwipeRight(this)
     }
 }

@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.dr.predulive.R
 import com.dr.predulive.dashboard.DashboardActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -42,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
         var signInSpinner = findViewById<View>(R.id.signInSpinner) as Spinner
 
         var mySpinnerAdapter: ArrayAdapter<String> = ArrayAdapter(
+
             this,
             android.R.layout.simple_list_item_1,
             resources.getStringArray(R.array.userType)
@@ -65,11 +67,14 @@ class LoginActivity : AppCompatActivity() {
             signIn()
         }
     }
-    fun googleSignIn(view: View) {}
+    fun googleSignIn(view: View) {
+
+    }
 
     fun registerNewUser(view: View) {
         val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
+        Animatoo.animateDiagonal(this)
     }
     fun forgotUserPassword(view: View) {
         Toast.makeText(this, "what, You Forgot password again !", Toast.LENGTH_SHORT).show()
@@ -84,7 +89,10 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun signIn() {
-        auth.signInWithEmailAndPassword(loginEmailEditText.text.toString().trim(), loginPasswordEditText.text.toString().trim())
+        auth.signInWithEmailAndPassword(
+            loginEmailEditText.text.toString().trim(),
+            loginPasswordEditText.text.toString().trim()
+        )
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
@@ -94,8 +102,10 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
     }
@@ -103,5 +113,6 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUI() {
         var intent = Intent(this, DashboardActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSwipeLeft(this)
     }
 }

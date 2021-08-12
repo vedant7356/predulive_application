@@ -4,113 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgm"
     tools:context=".dashboard.dashboardButtons.employSection.EmployActivity">
-<Button
-    android:id="@+id/add_res"
-    android:layout_width="278dp"
-    android:layout_height="56dp"
-    android:text="Select Resume"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.343" />
-
-<Button
-    android:id="@+id/add_res2"
-    android:layout_width="278dp"
-    android:layout_height="56dp"
-    android:text="Upload Resume Data"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.657" />
-
-<Button
-    android:id="@+id/emp_contact_data"
-    android:layout_width="278dp"
-    android:layout_height="56dp"
-    android:text="Employer Contact"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.444" />
-
-<Button
-    android:id="@+id/up_eve_details"
-    android:layout_width="278dp"
-    android:layout_height="56dp"
-    android:text="Upcoming Event Details"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.496"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.555" />
 
 
-<ImageView
-    android:id="@+id/fetch_img"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.102"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.076"
-    tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/add_res"
+        style="@style/app_Button"
+        android:layout_width="376dp"
+        android:layout_height="101dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="Select Resume"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
 
-<TextView
-    android:id="@+id/textView2"
-    android:layout_width="221dp"
-    android:layout_height="31dp"
-    android:text="WELCOME!"
-    android:textAlignment="center"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.915"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.065" />
+    <Button
+        android:id="@+id/add_res2"
+        style="@style/app_Button"
+        android:layout_width="315dp"
+        android:layout_height="59dp"
+        android:text="Upload Resume Data"
+        android:textSize="20sp"
+        android:fontFamily="@font/alegreya_sc_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
 
-<TextView
-    android:id="@+id/us_type"
-    android:layout_width="221dp"
-    android:layout_height="31dp"
-    android:text="USER TYPE"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.915"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.204" />
+    <Button
+        android:id="@+id/emp_contact_data"
+        style="@style/app_Button"
+        android:layout_width="182dp"
+        android:layout_height="108dp"
+        android:text="Employer Contact"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
 
-<TextView
-    android:id="@+id/us_email"
-    android:layout_width="221dp"
-    android:layout_height="31dp"
-    android:text="USER EMAIL"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.915"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.134" />
+    <Button
+        android:id="@+id/up_eve_details"
+        style="@style/app_Button"
+        android:layout_width="173dp"
+        android:layout_height="103dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="Upcoming Event Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
 
-<Button
-    android:id="@+id/up_event"
-    android:layout_width="267dp"
-    android:layout_height="50dp"
-    android:text="Add Upcomming Events"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.77" />
+    <Button
+        android:id="@+id/up_event"
+        style="@style/app_Button"
+        android:layout_width="315dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="Add Upcomming Events"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/blink_image"
+        android:layout_width="414dp"
+        android:layout_height="317dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/emp_head" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

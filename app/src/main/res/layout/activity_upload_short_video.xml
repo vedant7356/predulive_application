@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bgm"
     tools:context=".dashboard.dashboardButtons.UploadShortVideoActivity">
     <VideoView
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sc_black"
             android:id="@+id/et_inspire_title"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -36,21 +38,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_choose_vedio"
-        android:text="CHOOSE VIDEO"
+        style="@style/app_Button"
+        android:layout_width="385dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_height="61dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
-        />
+        android:text="CHOOSE VIDEO" />
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_upload_vedio"
-        android:text="Upload VIDEO"
+        style="@style/app_Button"
+        android:layout_width="385dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_height="61dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:text="Upload VIDEO"
 
         />
 

@@ -13,17 +13,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.dr.predulive.*
 import com.dr.predulive.daos.UserDao
 import com.dr.predulive.dashboard.bottomNavigationViewFragments.coursesFragment
 import com.dr.predulive.dashboard.bottomNavigationViewFragments.homeFragment
-import com.dr.predulive.dashboard.bottomNavigationViewFragments.opportunityFragment
-import com.dr.predulive.dashboard.bottomNavigationViewFragments.uploadFragment
-import com.dr.predulive.dashboard.dashboardButtons.inspireSection.InspireActivity
 import com.dr.predulive.dashboard.dashboardButtons.UploadShortVideoActivity
 import com.dr.predulive.dashboard.dashboardButtons.employSection.EmployActivity
+import com.dr.predulive.dashboard.dashboardButtons.inspireSection.InspireActivity
 import com.dr.predulive.dashboard.uploadedCourses.UploadedCoursesActivity
 import com.dr.predulive.models.User
 import com.dr.predulive.navigationView.Student.StudentUploadedResumeActivity
@@ -160,7 +159,10 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 //                    selectedFragment = opportunityFragment()
 //                }
             }
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, selectedFragment).commit()
+            supportFragmentManager.beginTransaction().replace(
+                R.id.fragment_container,
+                selectedFragment
+            ).commit()
 
             return@OnNavigationItemSelectedListener true
         }
@@ -173,19 +175,23 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             R.id.profile -> {
                 val intent = Intent(this, EditProfileActivity::class.java)
                 startActivity(intent)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.signOut -> {
                 Toast.makeText(this, "Successfully Signed Out", Toast.LENGTH_SHORT).show()
                 auth.signOut()
                 finish()
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.changePasswords -> {
                 val intent = Intent(this, ChangePasswordActivity::class.java)
                 startActivity(intent)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.contactUs -> {
                 // open chrome custom tab
                 ContactUs().loadContactUs(applicationContext, this@DashboardActivity)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.Support -> {
                 Toast.makeText(this, "R.id.Support", Toast.LENGTH_SHORT).show()
@@ -196,19 +202,32 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
             //  userSpecific :- Company
             R.id.CompanyDashboarduploadCompanyDetails -> {
-                Toast.makeText(this, "R.id.CompanyDashboarduploadCompanyDetails", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "R.id.CompanyDashboarduploadCompanyDetails",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
             R.id.CompanyDashboardUploadCandidateRequirements -> {
-                Toast.makeText(this, "R.id.CompanyDashboardUploadCandidateRequirements", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "R.id.CompanyDashboardUploadCandidateRequirements",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
 
 
             //  userSpecific :- Institute
             R.id.InstituteDashboardUploadedInstituteDetails -> {
-                Toast.makeText(this, "R.id.InstituteDashboardUploadedInstituteDetails", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "R.id.InstituteDashboardUploadedInstituteDetails",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
             R.id.InstituteDashboardUploadCourses -> {
-                Toast.makeText(this, "R.id.InstituteDashboardUploadCourses", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "R.id.InstituteDashboardUploadCourses", Toast.LENGTH_SHORT)
+                    .show()
             }
 
 
@@ -218,16 +237,19 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                 Toast.makeText(this, "R.id.studentuploadedResume", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, StudentUploadedResumeActivity::class.java)
                 startActivity(intent)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.studentUploaded_Short_Videos -> {
 //                Toast.makeText(this, "R.id.studentUploaded_Short_Videos", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, UploadShortVideoActivity::class.java)
                 startActivity(intent)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.studentuploadedCourses -> {
                 Toast.makeText(this, "R.id.studentuploadedCourses", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, UploadedCoursesActivity::class.java)
                 startActivity(intent)
+                Animatoo.animateSwipeLeft(this)
             }
             R.id.studentStudyMaterial -> {
                 Toast.makeText(this, "R.id.studentStudyMaterial", Toast.LENGTH_SHORT).show()
@@ -264,15 +286,18 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     fun inspireButtonClicked(view: View) {
         val intent = Intent(this, InspireActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSplit(this)
     }
     fun awareButtonClicked(view: View) {}
     fun educateButtonClicked(view: View) {
         var intent = Intent(this, UploadedCoursesActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSplit(this)
     }
     fun employButtonClicked(view: View) {
         val intent = Intent(this, EmployActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSplit(this)
     }
 
 }

@@ -125,6 +125,11 @@ dependencies {
 
     implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
 
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+
+
 
 
 
@@ -159,6 +164,11 @@ dependencies {
 
 
     implementation 'com.google.firebase:firebase-database-ktx'
+
+    implementation 'com.github.mohammadatif:Animatoo:master'
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
 
 
 }

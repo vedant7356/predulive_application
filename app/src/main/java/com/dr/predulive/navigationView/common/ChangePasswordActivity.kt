@@ -5,6 +5,7 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.dr.predulive.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_change_password.*
@@ -39,6 +40,7 @@ class ChangePasswordActivity : AppCompatActivity() {
 
     fun back(view: View) {
         finish()
+        Animatoo.animateSwipeRight(this)
     }
 
 }

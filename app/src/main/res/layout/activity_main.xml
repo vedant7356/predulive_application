@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="Predulive Edutech Foundation"
         android:textColor="@color/white"
+        android:fontFamily="@font/alegreya_sc_black"
         android:textSize="38sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -49,6 +50,20 @@
         android:padding="10dp"
         android:layout_marginBottom="180dp"/>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="progress_bar.json"
+        app:lottie_loop="true" />
 
 
     <!--    <Button-->
